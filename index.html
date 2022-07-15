@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student form</title>
+    <link rel="stylesheet" href="./firebase.css">
+</head>
+<body>
+    <div class="container">
+        <div id="box">
+            <form >
+                <h2>CRUD FIREBASE</h2>
+                <hr>
+                <br><br>
+                <div class="inputbox">
+                    RollNo: &nbsp;&nbsp;<input type="text" id="rollnobox">
+                    <br><br>
+                    Name:&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="namebox">
+                    <br><br>
+                    Gender:&nbsp;&nbsp;<select name="" id="genbox">
+                        <option value="" selected disabled>select choice</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Others">Others</option>
+                    </select>
+                    <br><br>
+                    Contact:&nbsp;<input type="text" name="" id="contactNo">
+                    <br><br>
+                    Address:<input type="text" id="addbox">
+                    <br><br>
+                </div>
+                <div id="btns">
+                    <button class="btn">Insert</button>
+                    <button class="btn">Read</button>
+                    <button class="btn">Update</button>
+                    <button class="btn">Delete</button>
+                </div>
+                <div id="list"><a href="./user.html">Student list</a></div>
+            </form>
+        </div>
+    </div>
+    
+    <script type="module" src="./Firebaseconfigure.js"></script>
+    <script type="module" src="./firebase.js"></script>
+</body>
+</html>
